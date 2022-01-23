@@ -1,0 +1,21 @@
+5. Find the output and write explanation?
+Given:
+class Test {
+	public static void main(String[] args) {
+		byte b = 127;
+		++b;
+		b++;
+		System.out.println("Value of variable b : "+b);
+	}
+}
+
+Output:
+
+C:\WorkSpaceEP\poc1>javac Test.java
+C:\WorkSpaceEP\poc1>java Test
+Value of variable b : -127
+
+Explaination:
+The Range of Byte is -128 to 127
+b=++b it will -128
+b=b++ it will -128+1=-127

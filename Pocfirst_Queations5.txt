@@ -1,0 +1,18 @@
+5. Find the output and write explanation?
+Given:
+class Main {
+	public static void main(String[] args) {
+		int t;
+		System.out.println("Value of variable t : "+t);
+		}
+	}
+Output:
+
+C:\WorkSpaceEP\poc1>javac Main.java
+Main.java:7: error: variable t might not have been initialized
+System.out.println("Value of variable t : "+t);
+                                            ^
+1 error
+Explaination:
+declare a local variable you need to initialize it before using it for the first time.
+so compiler never assigns a default value to an uninitialized local variable.so t is find initialize globally then find output.
